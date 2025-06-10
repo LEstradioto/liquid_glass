@@ -131,7 +131,7 @@
         // --- Background Controls ---
         const bgFolder = gui.addFolder('Background');
         const controls = {
-            mode: 'Image',
+            mode: 'Tiling',
             randomize: () => {
                 textureLoader.load(`https://picsum.photos/375/812?random=${Math.random()}`, (newTexture) => {
                     if (uniforms.iChannel0.value) {
